@@ -1,0 +1,16 @@
+"""Finding the positive integers in a input given list and printing them in a single line"""
+
+l1=list(map(int,input("Input: list1 =").split(",")))
+
+for i in l1:
+    if i>0:
+        
+        print(i,end=" ")
+print()
+"""Remove the negative integers from the given input list and return the list with only postive integers"""
+l2=list(map(int,input("Input: list2 =").split(",")))
+
+for j in l2:
+    if j<=0:
+        l2.remove(j)
+print(l2)
